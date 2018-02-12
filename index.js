@@ -4,7 +4,7 @@ const math = {
     "*":(first,second)=>{return Number(first)*Number(second)},
     "/":(first,second)=>{return Number(first)/Number(second)},
 };
-
+console.log('Hi, 0.0.1');
 function polishNatation(polishStr){
     let array = polishStr.split(' ');
     let number = [];
@@ -19,7 +19,5 @@ function polishNatation(polishStr){
     });
     return number[0];
 }
-let a = '5 3 + 10 *';
 
-let test = polishNatation(a);
-console.log(test);
+module.exports = polishNatation;
